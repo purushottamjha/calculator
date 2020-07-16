@@ -11,6 +11,8 @@ Output has been deployed here https://calculator.codestreet.io/
 1. `git clone https://github.com/purushottamjha/calculator.git` to clone this repo
 1. `cd calculator` to go to project directory.
 1. `npm i` to install the dependencies.
+1. Added unit test.
+1. Code coverage is now 100%.
 
 ## Development server
 

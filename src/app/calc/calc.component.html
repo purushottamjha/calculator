@@ -9,23 +9,23 @@
   <div class="calculator-keys">
 
     <!--Operators-->
-    <button type="button" class="operator" (click)="getOperation('+')">+</button>
-    <button type="button" class="operator" (click)="getOperation('-')">-</button>
-    <button type="button" class="operator" (click)="getOperation('*')">&times;</button>
-    <button type="button" class="operator" (click)="getOperation('/')">&divide;</button>
+    <button type="button" class="operator plus" (click)="getOperation('+')">+</button>
+    <button type="button" class="operator minus" (click)="getOperation('-')">-</button>
+    <button type="button" class="operator multiply" (click)="getOperation('*')">&times;</button>
+    <button type="button" class="operator divide" (click)="getOperation('/')">&divide;</button>
     <!--/Operators-->
 
     <!--Operands-->
-    <button type="button" (click) = "getNum('7')">7</button>
-    <button type="button" (click) = "getNum('8')">8</button>
-    <button type="button" (click) = "getNum('9')">9</button>
-    <button type="button" (click) = "getNum('4')">4</button>
-    <button type="button" (click) = "getNum('5')">5</button>
-    <button type="button" (click) = "getNum('6')">6</button>
-    <button type="button" (click) = "getNum('1')">1</button>
-    <button type="button" (click) = "getNum('2')">2</button>
-    <button type="button" (click) = "getNum('3')">3</button>
-    <button type="button" (click) = "getNum('0')">0</button>
+    <button type="button" class="operand seven" (click) = "getNum('7')">7</button>
+    <button type="button" class="operand eight" (click) = "getNum('8')">8</button>
+    <button type="button" class="operand nine" (click) = "getNum('9')">9</button>
+    <button type="button" class="operand four" (click) = "getNum('4')">4</button>
+    <button type="button" class="operand five" (click) = "getNum('5')">5</button>
+    <button type="button" class="operand six" (click) = "getNum('6')">6</button>
+    <button type="button" class="operand one" (click) = "getNum('1')">1</button>
+    <button type="button" class="operand two" (click) = "getNum('2')">2</button>
+    <button type="button" class="operand three" (click) = "getNum('3')">3</button>
+    <button type="button" class="operand zero" (click) = "getNum('0')">0</button>
     <!--/Operands-->
 
     <!--Decimal-->
@@ -41,7 +41,7 @@
     <!--/Equals-->
 
     <!--Plus/Minus-->
-    <button type="button" class="plus-minus-sign" (click)="toggleNegativeSign()">+/-</button>
+    <button type="button" class="plus-minus" (click)="toggleNegativeSign()">+/-</button>
     <!--/Plus/Minus-->
   </div>
   <!--/Calculator keys-->
