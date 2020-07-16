@@ -1,3 +1,6 @@
+# Current build status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0077af76-8300-494a-af07-4c3dbfdef9c7/deploy-status)](https://app.netlify.com/sites/puru-calculator/deploys)
+
 # Calculator
 
 Calculator take home assignment from Microsoft.
