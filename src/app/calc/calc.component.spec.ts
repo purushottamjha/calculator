@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CalcComponent } from './calc.component';
-import { By } from '@angular/platform-browser';
 
 describe('CalcComponent', () => {
   let component: CalcComponent;

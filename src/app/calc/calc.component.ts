@@ -30,6 +30,11 @@ export class CalcComponent {
   waitForSecondNumber: boolean = false;
 
   /**
+   * This is the memory store.
+   */
+  memory: string = '0';
+
+  /**
    * This is the constructor method.
    */
   constructor() {}
@@ -114,5 +119,26 @@ export class CalcComponent {
     this.firstOperand = null;
     this.waitForSecondNumber = false;
     this.operator = null;
+  }
+
+  /**
+   * Implement the memory command.
+   */
+  storeInMemory(): void {
+    this.memory = this.currentNumber;
+  }
+
+  /**
+   * Clear memory;
+   */
+  clearMemory(): void {
+    this.memory = '0';
+  }
+
+  /**
+   * Implement the memory recall.
+   */
+  recallMemory(): void {
+    this.currentNumber = this.memory;
   }
 }
