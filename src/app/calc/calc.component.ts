@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calc.component.scss']
 })
 export class CalcComponent implements OnInit {
+  result: string = '0';
+  constructor() {}
 
-  constructor() { }
+  /**
+   * This is a lifecycle method that is called when this component is initialized.
+   */
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  /**
+   * Clears the calculator result screen.
+   */
+  clr(): void {
+    this.result = '0';
   }
-
 }
