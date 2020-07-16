@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './calc.component.html',
   styleUrls: ['./calc.component.scss']
 })
-export class CalcComponent implements OnInit {
+export class CalcComponent {
   /**
    * Holds the value that will be shown in the result input box.
    */
@@ -17,12 +17,12 @@ export class CalcComponent implements OnInit {
   /**
    * Holds teh value of the first operand of the operation.
    */
-  firstOperand = null;
+  firstOperand: number = null;
 
   /**
    * Holds the operator.
    */
-  operator = null;
+  operator: string = null;
 
   /**
    * If the user is finished with the first operand and ready to enter second operand.
@@ -33,11 +33,6 @@ export class CalcComponent implements OnInit {
    * This is the constructor method.
    */
   constructor() {}
-
-  /**
-   * This is a lifecycle method that is called when this component is initialized.
-   */
-  ngOnInit(): void {}
 
   /**
    * Get the operands.
@@ -70,7 +65,7 @@ export class CalcComponent implements OnInit {
   /**
    * This method is called when the equals sign is clicked to calculate the result.
    */
-  calcResult(operator: string, secondOperand: number) {
+  calcResult(operator: string, secondOperand: number): number {
     switch (operator) {
       case '+':
         return (this.firstOperand += secondOperand);
@@ -103,7 +98,7 @@ export class CalcComponent implements OnInit {
   /**
    * This method toggles the - sign and hence toggles the number between +ve & -ve.
    */
-  toggleNegativeSign() {
+  toggleNegativeSign(): void {
     if (this.currentNumber.startsWith('-')) {
       this.currentNumber = this.currentNumber.substring(1);
     } else {
