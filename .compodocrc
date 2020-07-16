@@ -1,0 +1,7 @@
+{
+  "tsconfig": "tsconfig.json",
+  "customFavicon":"src/favicon.ico",
+  "hideGenerator":true,
+  "coverageTestThresholdFail": true,
+  "coverageMinimumPerFile": "100"
+}
