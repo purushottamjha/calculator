@@ -1,12 +1,12 @@
-# Current build status
+# Calculator
+Calculator take home assignment from Microsoft.
+
+## Current build status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0077af76-8300-494a-af07-4c3dbfdef9c7/deploy-status)](https://app.netlify.com/sites/puru-calculator/deploys)
 
-# Production app
+## Production app
 Output has been deployed here https://calculator.codestreet.io/
 
-# Calculator
-
-Calculator take home assignment from Microsoft.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -26,6 +26,17 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Features
+1. Uses HTTPS
+1. HTTPS Certificate from: Let’s Encrypt
+1. Prettier will beautify code automatically before commit
+1. `npm run lint` will check for lint errors
+1. `npm run test` will run unit tests
+1. `npm run build` will build the project
+1. `npm run build:prod` will build the prod version
+1.  Enabled support for negative numbers
+1. Added a favicon
 
 ## Further help
 
